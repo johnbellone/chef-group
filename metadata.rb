@@ -1,6 +1,7 @@
-maintainer       "Blue Box Group, LLC"
-maintainer_email "support@bluebox.net"
-license          "Apache 2.0"
-description      "Installs/Configures group"
-long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.0.1"
+name             'group'
+maintainer       'John Bellone'
+maintainer_email 'jbellone@bloomberg.net'
+license          'Apache v2.0'
+description      'Use data_bags to create groups.'
+long_description 'Use data_bags to create groups.'
+version          '0.1.0'

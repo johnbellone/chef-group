@@ -17,28 +17,10 @@
 # limitations under the License.
 #
 
-action :create do
-  group_resource             :create
-end
-
-action :remove do
-  keygen_resource           :delete
-end
-
-action :modify do
-  group_resource             :modify
-end
-
-action :manage do
-  group_resource             :manage
-end
-
-action :lock do
-  group_resource             :lock
-end
-
-action :unlock do
-  group_resource             :unlock
+%w{create remove modify manage lock unlock}.each do |name|
+  action name.to_sym do
+    group_resource name.to_sym
+  end
 end
 
 private
